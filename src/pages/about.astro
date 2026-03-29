@@ -11,6 +11,8 @@ const skills = ["Python", "JavaScript", "Astro", "C++"]
 const happy = true;
 const finished = false;
 const goal = 3;
+
+const skillColor = "crimson";
 ---
 
 <html lang="en">
@@ -18,6 +20,16 @@ const goal = 3;
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
+        <style define:vars={{skillColor}}>
+            h1 {
+                color: purple;
+                font-size: 4rem;
+      }
+      .skill {
+        color: var(--skillColor);
+        font-weight: bold;
+      }
+        </style>
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
@@ -33,7 +45,7 @@ const goal = 3;
         <ul>
             <li>My name is {identity.firstName}, I'm from {identity.country} and I'm a {identity.occupation}.</li>
             <li>My hobbies include {identity.hobbies}.</li>
-            <li>I have experience with the following skills: {skills[0]}, {skills[1]}, {skills[2]} and {skills[3]}.</li>
+            <li>I have experience with the following skills: <span class="skill">{skills[0]}</span>, <span class="skill">{skills[1]}</span>, <span class="skill">{skills[2]}</span> and <span class="skill">{skills[3]}</span>.</li>
             <li> {happy &&  <p>I'm happy to be using Astro!</p>} </li>
             <li> {finished === true ? <p>I'm finished!</p> : <p>I'm not finished yet.</p>} </li>
             <li> {goal === 3 ? <p>My goal is to finish before my Work Experience ends.</p> : <p> My goal isn't to finish but to do as much as I can.</p>}</li>
