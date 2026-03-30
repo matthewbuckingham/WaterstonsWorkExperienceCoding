@@ -1,6 +1,11 @@
 ---
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
 import '../Styles/global.css';
 const pageTitle = "About Pixel & Play Co.";
+const skillColor = "black";
+const fontWeight = "bold";
+const fontSize = "1.5rem";
 ---
 
 <html lang="en">
@@ -13,22 +18,25 @@ const pageTitle = "About Pixel & Play Co.";
                 color: purple;
                 font-size: 4rem;
       }
+      .info {
+        color: var(--skillColor);
+        font-weight: var(--fontWeight);
+        text-transform: var(--fontSize);
+      }
         </style>
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-        <a href="/">Home</a>
-        <a href="/about">AboutMB</a>
-        <a href="/blog">Blog</a>
-        <a href="/Pixel&PlayCo">Pixel & Play Co.</a>
+        <Header />
 		<h1>{pageTitle}</h1>
         
 
-        <p>Pixel & Play Co. is a company that blends storytelling, games and quirky products.</p>
-        <p>We have lots of products coming out in the coming days, we hope that you have a look at them! </p>
+        <p><span class="info">Pixel & Play Co. is a company that blends storytelling, games and quirky products.</span></p>
+        <p><span class="info">We have lots of products coming out in the coming days, we hope that you have a look at them!</span></p>
 
         <p></p>
+        <Footer />
 	</body>
 </html>
