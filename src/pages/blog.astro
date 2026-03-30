@@ -23,6 +23,14 @@ const pageTitle = "Blog";
 	</head>
 	<body>
         <Header />
+		<script>
+    		const menu = document.querySelector('.menu');
+
+    		menu?.addEventListener('click', () => {
+      			const isExpanded = menu.getAttribute('aria-expanded') === 'true';
+      			menu.setAttribute('aria-expanded', `${!isExpanded}`);
+    		});
+ 	 	</script>
 		<h1>{pageTitle}</h1>
         <h2>for my time making the website</h2>
         <p>This is where I might add extra info during my time here</p>
