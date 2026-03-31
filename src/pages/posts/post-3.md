@@ -9,7 +9,7 @@ image:
     alt: 'The Astro logo on a dark background with a pink glow.'
 tags: ["astro", "blogging", "learning in public"]
 ---
-# Pixel & Play Co.'s products
+# Pixel & Play Co.s products
 
 We sell lots of products as part of our company, which are aimed at those who want to learn through play! A few examples of our products are...
 
@@ -19,6 +19,8 @@ We won't release them yet, as we need to develop our website to allow you to buy
 
 However, we will make sure to release them with a discount for those who buy products in the first week!
 
-In the meantime, we'll keep posting about new functions and other cool posts!
+In the meantime, we will keep posting about new functions and other cool posts!
 
 Catch you soon!
+
+tags: astro, blogging, learning in public (I have copied and pasted these)

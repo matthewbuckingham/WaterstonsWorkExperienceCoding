@@ -9,6 +9,8 @@ const pageTitle = "Blog";
 </BaseLayout>
         <h2>for my time making the website</h2>
         <p>This is where I might add extra info during my time here</p>
+		<p>If you want to filter posts, replace the "/blog/" with "/tags/(insert filter here (e.g. successes, astro))" in the link!</p>
+		<p>You can find the tags at the bottom of each post
         <ul>   
 			{allPosts.map((post: any) => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
         </ul>
