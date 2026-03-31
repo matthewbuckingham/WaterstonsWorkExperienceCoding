@@ -20,10 +20,17 @@ const goal = 3;
     <h2>My awesome blog subtitle</h2>
 </BaseLayout>
 
+<style> .info {
+    color: blue;
+    font-weight: bold;
+    font-size: 1rem;
+}
+</style>
+
         <ul>
-            <li>My name is {identity.firstName}, I'm from {identity.country} and I'm a {identity.occupation}.</li>
-            <li>My hobbies include {identity.hobbies}.</li>
-            <li>I have experience with the following skills: <span class="skill">{skills[0]}</span>, <span class="skill">{skills[1]}</span>, <span class="skill">{skills[2]}</span> and <span class="skill">{skills[3]}</span>.</li>
+            <li>My name is <span class="info">{identity.firstName}</span>, I'm from <span class="info">{identity.country}</span> and I'm a <span class="info">{identity.occupation}</span>.</li>
+            <li>My hobbies include <span class="info">{identity.hobbies}</span>.</li>
+            <li>I have experience with the following skills: <span class="info">{skills[0]}</span>, <span class="info">{skills[1]}</span>, <span class="info">{skills[2]}</span> and <span class="info">{skills[3]}</span>.</li>
             <li> {happy &&  <p>I'm happy to be using Astro!</p>} </li>
             <li> {finished === false ? <p>I'm not finished yet!</p> : <p>I'm finished.</p>} </li>
             <li> {goal === 3 ? <p>My goal is to finish before my Work Experience ends.</p> : <p> My goal isn't to finish but to do as much as I can.</p>}</li>
