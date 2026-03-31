@@ -1,6 +1,9 @@
 ---
+import {Image} from 'astro:assets';
+import Banner from '../images/pixel_and_play_banner.svg';
 const { frontmatter } = Astro.props;
 ---
+<Image src={Banner} alt="The Company Banner" width={750} height={250} />
 <meta charset="utf-8" />
 <p>Published on: {frontmatter.pubDate.toString().slice(0,10)}</p>
 <p>Written by {frontmatter.author}</p>
