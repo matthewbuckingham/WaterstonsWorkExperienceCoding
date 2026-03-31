@@ -24,3 +24,5 @@ In the meantime, we will keep posting about new functions and other cool posts!
 Catch you soon!
 
 tags: astro, blogging, learning in public (I have copied and pasted these)
+
+If you want to filter posts, replace the "/blog/" with "/tags/(insert filter here (e.g. successes, astro))" in the link!

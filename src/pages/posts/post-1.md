@@ -30,3 +30,5 @@ I will also, from this point, post about Pixel & Play Co. (a fictional client).
 
 
 tags: astro, blogging, learning in public (I have copied and pasted these)
+
+If you want to filter posts, replace the "/blog/" with "/tags/(insert filter here (e.g. successes, astro))" in the link!

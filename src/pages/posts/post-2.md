@@ -27,3 +27,5 @@ Thanks a lot for reading!
 
 
 tags: astro, blogging, learning in public (I have copied and pasted these)
+
+If you want to filter posts, replace the "/blog/" with "/tags/(insert filter here (e.g. successes, astro))" in the link!
