@@ -1,6 +1,8 @@
 ---
+import {Image} from 'astro:assets';
 import Header from '../components/Header.astro';
 import '../Styles/global.css';
+import Banner from '../images/pixel_and_play_banner.svg';
 const {pageTitle} = Astro.props
 ---
 <style>
@@ -26,6 +28,7 @@ const {pageTitle} = Astro.props
     <title>{pageTitle}</title>
   </head>
   <body>
+    <Image src={Banner} alt="The Company Banner" width={750} height={250} />
     <Header />
     <h1>{pageTitle}</h1>
     <script>
