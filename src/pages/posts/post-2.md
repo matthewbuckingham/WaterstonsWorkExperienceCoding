@@ -1,8 +1,9 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Introductory Blog Post'
 pubDate: 2026-03-30
 description: 'This is the first post about Pixel & Play Co.'
-author: 'Astro Learner'
+author: 'Matthew B'
 image:
     url: 'https://docs.astro.build/assets/rose.webp'
     alt: 'The Astro logo on a dark background with a pink glow.'

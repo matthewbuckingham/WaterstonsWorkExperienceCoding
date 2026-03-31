@@ -1,8 +1,9 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Product Blog Post'
 pubDate: 2026-03-30
 description: 'Pixel & Play Co.s introduction to its products'
-author: 'Astro Learner'
+author: 'Matthew B'
 image:
     url: 'https://docs.astro.build/assets/rose.webp'
     alt: 'The Astro logo on a dark background with a pink glow.'
