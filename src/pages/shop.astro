@@ -1,0 +1,24 @@
+---
+import Footer from '../components/Footer.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {Image} from 'astro:assets';
+import Console from '../images/playdateConsole.jpg';
+import cards from '../images/cardGames.jpg';
+import pursuit from'../images/trivialPursuit.jpg';
+import uxbridge from'../images/uxbridgeDictionary.jpg';
+
+const pageTitle = "Products";
+---
+<BaseLayout pageTitle={pageTitle}>
+    <h2>My awesome blog subtitle</h2>
+</BaseLayout>
+		<script>
+			import "../scripts/menu.js";
+ 	 	</script>
+        <p>We have a variety of products which will be available soon, which will be demonstrated below. </p>
+        <Image src={Console} alt="The Playdate Console" width={300} height={300} /> <Image src={cards} alt="Card Games" height={300} />
+        <Image src={pursuit} alt="Trivial Pursuit" width={300} height={300} /> <Image src={uxbridge} alt="Uxbridge Dictionary" height={300} />
+        <p>These are all useful for education, whether in basic info or literacy. The range will expand soon.</p>
+        <Footer />
+	</body>
+</html>
