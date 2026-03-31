@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 'Product Blog Post'
+title: 'Waterstons Updates'
 pubDate: 2026-03-31
 description: 'Pixel & Play Co.s looks at its collaboration with Waterstons'
 author: 'Matthew B'
