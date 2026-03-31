@@ -1,43 +1,18 @@
 ---
 import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
-import '../Styles/global.css';
+import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "Blog";
-
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-        <style>
-            h1 {
-                color: purple;
-                font-size: 4rem;
-      }
-        </style>
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-        <Header />
-		<script>
-    		const menu = document.querySelector('.menu');
-
-    		menu?.addEventListener('click', () => {
-      			const isExpanded = menu.getAttribute('aria-expanded') === 'true';
-      			menu.setAttribute('aria-expanded', `${!isExpanded}`);
-    		});
- 	 	</script>
-		<h1>{pageTitle}</h1>
+<BaseLayout pageTitle={pageTitle}>
+    <h2>My awesome blog subtitle</h2>
+</BaseLayout>
         <h2>for my time making the website</h2>
         <p>This is where I might add extra info during my time here</p>
         <ul>
-            <li><a href="/posts/post-1/">Post 1</a></li>
-            <li><a href="/posts/post-2/">Post 2</a></li>
-            <li><a href="/posts/post-3/">Post 3</a></li>
+            <li><a href="/posts/post-1/">The website's developer</a></li>
+            <li><a href="/posts/post-2/">Only for writers</a></li>
+            <li><a href="/posts/post-3/">Company's introduction</a></li>
+			<li><a href="/posts/post-4/">Quick Update</a></li>
         </ul>
         <Footer />
 	</body>

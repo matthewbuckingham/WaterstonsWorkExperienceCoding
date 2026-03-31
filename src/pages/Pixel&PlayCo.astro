@@ -1,49 +1,23 @@
 ---
 import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
-import '../Styles/global.css';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
 const pageTitle = "About Pixel & Play Co.";
 const skillColor = "black";
 const fontWeight = "bold";
 const fontSize = "1.5rem";
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-        <style>
-            h1 {
-                color: purple;
-                font-size: 4rem;
-      }
-      .info {
-        color: var(--skillColor);
-        font-weight: var(--fontWeight);
-        text-transform: var(--fontSize);
-      }
-        </style>
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-        <Header />
+<BaseLayout pageTitle={pageTitle}>
+    <h2>My awesome blog subtitle</h2>
+</BaseLayout>
 		<script>
-    		const menu = document.querySelector('.menu');
-
-    		menu?.addEventListener('click', () => {
-      			const isExpanded = menu.getAttribute('aria-expanded') === 'true';
-      			menu.setAttribute('aria-expanded', `${!isExpanded}`);
-    		});
+			import "../scripts/menu.js";
  	 	</script>
-		<h1>{pageTitle}</h1>
         
 
         <p><span class="info">Pixel & Play Co. is a company that blends storytelling, games and quirky products.</span></p>
         <p><span class="info">We have lots of products coming out in the coming days, we hope that you have a look at them!</span></p>
-
+		<p><span class="info">Check out the blogsite for more info!</span></p>
         <p></p>
         <Footer />
 	</body>

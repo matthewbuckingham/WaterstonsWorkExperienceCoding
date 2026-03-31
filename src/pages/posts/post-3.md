@@ -18,6 +18,6 @@ We won't release them yet, as we need to develop our website to allow you to buy
 
 However, we will make sure to release them with a discount for those who buy products in the first week!
 
-In the meantime, we'll keep posring about new functions and other cool posts!
+In the meantime, we'll keep posting about new functions and other cool posts!
 
 Catch you soon!
