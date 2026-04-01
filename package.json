@@ -13,6 +13,8 @@
   },
   "dependencies": {
     "@astrojs/netlify": "^7.0.5",
-    "astro": "^6.1.1"
+    "@astrojs/preact": "^5.1.0",
+    "astro": "^6.1.1",
+    "preact": "^10.29.0"
   }
 }

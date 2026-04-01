@@ -7,7 +7,7 @@ author: 'Matthew B'
 image:
     url: 'https://docs.astro.build/assets/rose.webp'
     alt: 'The Astro logo on a dark background with a pink glow.'
-tags: ["astro", "blogging", "learning in public"]
+tags: ["astro", "blogging", "author_notes"]
 ---
 # My First Blog Post
 
@@ -29,6 +29,6 @@ I will finish the Astro tutorial, and then keep adding more posts. Watch this sp
 I will also, from this point, post about Pixel & Play Co. (a fictional client).
 
 
-tags: astro, blogging, learning in public (I have copied and pasted these)
+tags: astro, blogging, author_notes (I have copied and pasted these)
 
 If you want to filter posts, replace the "/blog/" with "/tags/(insert filter here (e.g. successes, astro))" in the link!

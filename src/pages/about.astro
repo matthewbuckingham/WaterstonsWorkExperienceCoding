@@ -12,7 +12,7 @@ const identity = {
 };
 const skills = ["Python", "JavaScript", "Astro", "C++"]
 const happy = true;
-const finished = false;
+const finished = true;
 const goal = 3;
 ---
 <BaseLayout pageTitle={pageTitle}>
@@ -30,7 +30,7 @@ const goal = 3;
             <li>My hobbies include <span class="info">{identity.hobbies}</span>.</li>
             <li>I have experience with the following skills: <span class="info">{skills[0]}</span>, <span class="info">{skills[1]}</span>, <span class="info">{skills[2]}</span> and <span class="info">{skills[3]}</span>.</li>
             <li> {happy &&  <p>I'm happy to be using Astro!</p>} </li>
-            <li> {finished === false ? <p>I'm not finished yet!</p> : <p>I'm finished.</p>} </li>
+            <li> {finished === true ? <p>I'm finished!</p> : <p>I'm not finished yet.</p>} </li>
             <li> {goal === 3 ? <p>My goal is to finish before my Work Experience ends.</p> : <p> My goal isn't to finish but to do as much as I can.</p>}</li>
         </ul>
 

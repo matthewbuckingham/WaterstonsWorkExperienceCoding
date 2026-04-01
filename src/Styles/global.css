@@ -3,6 +3,29 @@ html {
   font-family: sans-serif;
 }
 
+html.dark {
+  background-color: #0d0950;
+  color: #fff;
+}
+
+.dark .menu {
+  background-color: #fff;
+  color: #000;
+}
+
+.dark .nav-links a:hover,
+.dark .nav-links a:focus {
+  color: #0d0950;
+}
+
+.dark .nav-links a {
+  color: #fff;
+}
+
+.dark a {
+  color: #ff9776;
+}
+
 body {
   margin: 0 auto;
   width: 100%;
@@ -18,6 +41,23 @@ body {
 h1 {
   margin: 1rem 0;
   font-size: 2.5rem;
+}
+
+button {
+  background-color: #0d0950;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: #ff9776;
+  color: #000;
 }
 
 /* nav styles */

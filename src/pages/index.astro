@@ -1,10 +1,11 @@
 ---
 import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
+import Greeting from '../components/Greeting.jsx';
 import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "Home Page";
 ---
 <BaseLayout pageTitle={pageTitle}>
+	<Greeting client:load messages={["Hej", "Hola", "Hallo", "Hi", "Hello", "Welcome to Pixel & Play Co."]}/>
 </BaseLayout>
 <style> h2 {
 	color: red;

@@ -1,0 +1,15 @@
+---
+import Footer from '../components/Footer.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProductSelector from '../components/ProductSelector.jsx';
+
+const pageTitle = "Quiz: What's the best product for you?";
+---
+<BaseLayout pageTitle={pageTitle}>
+	<p>Which of our soon-to-come products are for you? </p>
+    <ProductSelector client:load />
+	<Footer />
+</BaseLayout>
+<script>
+	import "../scripts/menu.js";
+</script>
